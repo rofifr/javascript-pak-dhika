@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tebakStyle.css" />
+    <title>Tebak Angka Game</title>
+  </head>
+  <body>
+    <div id="welcome-screen">
+      <h1>Selamat Datang!</h1>
+      <button onclick="startGame()">Mulai Game</button>
+    </div>
+
+    <div id="game-screen" style="display: none">
+      <h2>TEBAK ANGKA</h2>
+      <p id="rules">
+        Tebak angka dari 1-30. Kamu memiliki 6 kesempatan dan waktu 30 detik.
+      </p>
+      <input type="number" id="guessInput" placeholder="Masukkan tebakan" />
+      <button onclick="submitGuess()">TEBAK</button>
+      <p id="result"></p>
+      <div id="popup" style="display: none">
+        <p id="popup-message"></p>
+        <button onclick="playAgain()">Ya</button>
+        <button onclick="endGame()">Tidak</button>
+      </div>
+    </div>
+
+    <script src="tebakAngkaMe.js"></script>
+  </body>
+</html>

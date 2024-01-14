@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tebak Angka Game</title>
+    <link rel="stylesheet" href="tebakStyle.css" />
+    <!-- Icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Selamat Datang</h1>
+      <p>
+        Ini adalah game tebak angka. Kamu harus menebak angka 1-30 dengan angka
+        yang ditentukan oleh komputer.
+      </p>
+      <p>
+        Kamu diberikan kesempatan sebanyak 6 kali dan kamu akan diberi waktu
+        selama 30 detik. Jadi, berhati-hatilah, dan tebaklah dengan benar.
+      </p>
+
+      <div id="input-box">
+        <label for="guess">Masukkan angka tebakan 1-30</label>
+        <div id="timer">
+          <span>Waktu tersisa: </span>
+          <span id="waktu">30</span> detik
+        </div>
+
+        <div class="quantity-block">
+          <input
+            id="guess"
+            class="quantity-num"
+            type="number"
+            min="1"
+            max="30"
+          />
+          <div class="plusminus">
+            <button class="quantity-arrow-minus">
+              <span class="material-symbols-outlined"> remove </span>
+            </button>
+            <button class="quantity-arrow-plus">
+              <span class="material-symbols-outlined"> add </span>
+            </button>
+          </div>
+        </div>
+
+        <button onclick="submitGuess()" class="tebak" id="submit-button">
+          TEBAK
+        </button>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <script src="tebakAngkaMe.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="inputNumber.js"></script>
+  </body>
+</html>

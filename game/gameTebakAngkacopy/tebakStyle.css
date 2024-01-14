@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#welcome-screen,
+#game-screen {
+  text-align: center;
+  margin: 50px;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: none;
+}
