@@ -82,3 +82,6 @@ console.log(useShift);
 
 // untuk push() dan unshift() itu bisa menambahkan beberapa element sekaligus
 // tapi untuk pop() dan shift() hanya bisa dilakukan satu-persatu
+
+// lalu bagaimana jika ingin menghapus atau menambahkan selain di awal atau di akhir?
+// kata pak Dhika, itu akan dibahas di video selanjutnya
