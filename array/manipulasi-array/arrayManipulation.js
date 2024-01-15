@@ -46,19 +46,39 @@ let metodeJoin = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bry
 console.log(metodeJoin.join(" - "));
 
 // push() dan pop()
-// push() -> akan menambahkan element pada bagian akhir dari element atau nilai dari variabel arraynya
+// push() -> akan menambahkan element lain pada bagian akhir dari element atau nilai dari variabel arraynya
 
 let usePush = [];
 usePush = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bryan", " Zalnando"]];
 
-usePush.push("Amstrong");
+usePush.push("Amstrong", "Ujang");
 console.log(usePush);
 
 // pop()
-// pop() -> akan menghapus element pada bagian akhir dari element atau nilai dari variabel arraynya
+// pop() -> akan menghapus element lain pada bagian akhir dari element atau nilai dari variabel arraynya
 
 let usePop = [];
 usePop = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bryan", " Zalnando"]];
 
 usePop.pop();
 console.log(usePop); //maka element atau nilai dengan  multidimensi yang ada di dalam variabel array akan terhapus, karena merupakan element terakhir
+
+// unshift() dan shift()
+// unshift() -> akan menambahkan element lain pada bagian awal dari element atau nilai dari variabel arraynya
+
+let useUnshift = [];
+useUnshift = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bryan", " Zalnando"]];
+
+useUnshift.unshift("Ujang", "Bieber");
+console.log(useUnshift);
+
+// shift()
+// shift() -> akan menghapus element yang ada pada bagian awal dari element atau nilai dari variable arraynya
+let useShift = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bryan", " Zalnando"]];
+
+useShift.shift();
+useShift.shift();
+console.log(useShift);
+
+// untuk push() dan unshift() itu bisa menambahkan beberapa element sekaligus
+// tapi untuk pop() dan shift() hanya bisa dilakukan satu-persatu
