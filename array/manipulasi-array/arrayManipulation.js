@@ -93,3 +93,12 @@ let useSplice = ["Rofi", "Indriyani", "Fathurrohman"];
 useSplice.splice(2, 0, "Amstrong");
 // maksudnya adalah, 2 sebagai tempat kita mengurutkan index mana yang mau diambil, dan 0 sebagai 'bahwa tidak ada data yang perlu dihapus' (gunakan 1 atau lebih selain 0 untuk menghapus data yang diinginkan)
 console.log(useSplice.join(" - "));
+
+// 6. slice() -> mengiris element atau memisahkan element
+// slice(indexAwal, indexAkhir)
+let useSlice = [];
+useSlice = ["Rofi", "Indriyani", "Fathurrohman", "Amstrong", 69];
+let useSliceToSlice = useSlice.slice(1, 4);
+// slice() itu menghasilkan variable baru, jadi harus disimpan di dalam variable baru
+console.log(useSliceToSlice.join(" - ")); // ini element dengan variable baru menggunakan slice()
+console.log(useSlice.join(" - ")); // ini element dengan variabel lama tanpa menggunakan slide()
