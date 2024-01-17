@@ -46,7 +46,7 @@ let metodeJoin = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bry
 console.log(metodeJoin.join(" - "));
 
 // push() dan pop()
-// push() -> akan menambahkan element lain pada bagian akhir dari element atau nilai dari variabel arraynya
+// 1. push() -> akan menambahkan element lain pada bagian akhir dari element atau nilai dari variabel arraynya
 
 let usePush = [];
 usePush = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bryan", " Zalnando"]];
@@ -55,7 +55,7 @@ usePush.push("Amstrong", "Ujang");
 console.log(usePush);
 
 // pop()
-// pop() -> akan menghapus element lain pada bagian akhir dari element atau nilai dari variabel arraynya
+// 2. pop() -> akan menghapus element lain pada bagian akhir dari element atau nilai dari variabel arraynya
 
 let usePop = [];
 usePop = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bryan", " Zalnando"]];
@@ -64,7 +64,7 @@ usePop.pop();
 console.log(usePop); //maka element atau nilai dengan  multidimensi yang ada di dalam variabel array akan terhapus, karena merupakan element terakhir
 
 // unshift() dan shift()
-// unshift() -> akan menambahkan element lain pada bagian awal dari element atau nilai dari variabel arraynya
+// 3. unshift() -> akan menambahkan element lain pada bagian awal dari element atau nilai dari variabel arraynya
 
 let useUnshift = [];
 useUnshift = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bryan", " Zalnando"]];
@@ -73,7 +73,7 @@ useUnshift.unshift("Ujang", "Bieber");
 console.log(useUnshift);
 
 // shift()
-// shift() -> akan menghapus element yang ada pada bagian awal dari element atau nilai dari variable arraynya
+// 4. shift() -> akan menghapus element yang ada pada bagian awal dari element atau nilai dari variable arraynya
 let useShift = ["Rofi", "Fathurrohman", "Fikran", 69, true, ["Muhammad", " Bryan", " Zalnando"]];
 
 useShift.shift();
@@ -85,3 +85,10 @@ console.log(useShift);
 
 // lalu bagaimana jika ingin menghapus atau menambahkan selain di awal atau di akhir?
 // kata pak Dhika, itu akan dibahas di video selanjutnya
+
+// slice() dan splice()
+// 5. splice() -> nah ini, adalah metode yang bisa menghapus dan menambahkan element baru di tengah-tengah
+let useSplice = ["Rofi", "Indriyani", "Fathurrohman"];
+useSplice.splice(2, 0, "Amstrong");
+// maksudnya adalah, 2 sebagai tempat kita mengurutkan index mana yang mau diambil, dan 0 sebagai 'bahwa tidak ada data yang perlu dihapus' (gunakan 1 atau lebih selain 0 untuk menghapus data yang diinginkan)
+console.log(useSplice.join(" - "));
