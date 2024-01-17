@@ -88,6 +88,7 @@ console.log(useShift);
 
 // slice() dan splice()
 // 5. splice() -> nah ini, adalah metode yang bisa menghapus dan menambahkan element baru di tengah-tengah
+// slice(indexAwal, mauDihapusBerapa, elementBaru1, elementBaru2, ...)
 let useSplice = ["Rofi", "Indriyani", "Fathurrohman"];
 useSplice.splice(2, 0, "Amstrong");
 // maksudnya adalah, 2 sebagai tempat kita mengurutkan index mana yang mau diambil, dan 0 sebagai 'bahwa tidak ada data yang perlu dihapus' (gunakan 1 atau lebih selain 0 untuk menghapus data yang diinginkan)
