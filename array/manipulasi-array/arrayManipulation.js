@@ -111,7 +111,7 @@ useForEach.forEach(function (e, i) {
   console.log("Programmer ke - " + (i + 1) + " bernama " + e);
 });
 
-// map() -> sama seperti forEach tapi lebih baik, karena map() ini bisa mengembalikan array sedangkan forEach() tidak
+// 8. map() -> sama seperti forEach tapi lebih baik, karena map() ini bisa mengembalikan array sedangkan forEach() tidak
 
 let useMap = [19, 16, 9, 7, 22, 27, 41];
 let useMapForMap = useMap.map(function (e) {
@@ -120,3 +120,18 @@ let useMapForMap = useMap.map(function (e) {
   return e * 5;
 });
 console.log(useMapForMap.join(" - "));
+
+// 9. sort() -> metode ini menampilkan secara berurutan dari element yang ada di dalam array
+let useSort = [];
+useSort = [23, 25, 12, 18, 7, 1, 34, 77, 101];
+useSort.sort();
+console.log(useSort); // ini akan menampilkan urutan yang hanya mengambil angka pertamanya
+
+// untuk mengatasinya kita bisa menggunakan function()
+let useSecondSort = [23, 25, 12, 18, 7, 1, 34, 77, 101];
+useSecondSort.sort(function (a, b) {
+  return a - b;
+});
+console.log(useSecondSort.join(" - "));
+
+// selesai
