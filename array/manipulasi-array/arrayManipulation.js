@@ -136,7 +136,7 @@ console.log(useSecondSort.join(" - "));
 
 let cobaUseSortLagi = ["Indriyani", "Ujang", "Fathurrohman", "Amstrong", "Barbeque", "Chuaks", "Decimal", "Repeat"];
 cobaUseSortLagi.sort();
-console.log(cobaUseSortLagi.join(", ")); // ternyata ini juga bisa untuk huruf
+console.log(cobaUseSortLagi.join(", ")); // ternyata ini juga bisa untuk mengurutkan huruf
 
 // filter() dan find() -> (sama-sama berfungsi untuk menemukan element pada array, namun juga terdapat perbedaan)
 // 10. filter() -> ini bisa menemukan element pada array lebih dari satu (banyak)
@@ -144,5 +144,18 @@ let useFilter = [22, 101, 622, 11, 3, 723, 554, 213];
 let searchFilter = useFilter.filter(function (hehe) {
   // filter() akan mengembalikan nilai dalam bentuk array
   return hehe == 213; //ini akan mengembalikan nilai atau element array dimana nilai sama dengan 213
+  // ini juga bisa mengembalikan nilai dengan operator aritmatika lainnya
+  // misal
+  // return hehe < 22
 });
 console.log(searchFilter);
+
+// find() -> ini hanya dapat menemukan satu nilai atau element pada array
+let useFind = [];
+useFind = [22, 101, 622, 11, 3, 723, 554, 213, 612, 96, 69];
+let seacrhFind = useFind.find(function (haha) {
+  return haha == 554; // karena ini hanya dapat mengembalikan satu nilai, jadi mungkin tidak bisa menggunakan operator aritmatika lainnya
+});
+console.log(seacrhFind);
+
+// selesai
