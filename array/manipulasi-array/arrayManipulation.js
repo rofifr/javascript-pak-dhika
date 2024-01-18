@@ -158,4 +158,6 @@ let seacrhFind = useFind.find(function (haha) {
 });
 console.log(seacrhFind);
 
+// sebetulnya masih banyak metode-metode array lainnya
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 // selesai
