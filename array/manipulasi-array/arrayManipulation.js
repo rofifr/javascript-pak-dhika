@@ -102,3 +102,10 @@ let useSliceToSlice = useSlice.slice(1, 4);
 // slice() itu menghasilkan variable baru, jadi harus disimpan di dalam variable baru
 console.log(useSliceToSlice.join(" - ")); // ini element dengan variable baru menggunakan slice()
 console.log(useSlice.join(" - ")); // ini element dengan variabel lama tanpa menggunakan slide()
+
+// forEach() dan map()
+// 7. forEach() -> ini adalah metode yang menampilkan nilai atau element array menggunakan perulangan, (ini hampir sama dengan penggunaan for())
+let useForEach = ["Ujang", "Rofi", "Indriyani", "Fathurrohman"];
+useForEach.forEach(function (e) {
+  console.log(useForEach.join(" - "));
+});
