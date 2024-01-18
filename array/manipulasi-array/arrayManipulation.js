@@ -106,6 +106,17 @@ console.log(useSlice.join(" - ")); // ini element dengan variabel lama tanpa men
 // forEach() dan map()
 // 7. forEach() -> ini adalah metode yang menampilkan nilai atau element array menggunakan perulangan, (ini hampir sama dengan penggunaan for())
 let useForEach = ["Ujang", "Rofi", "Indriyani", "Fathurrohman"];
-useForEach.forEach(function (e) {
-  console.log(useForEach.join(" - "));
+useForEach.forEach(function (e, i) {
+  // e -> sebagai element dan i -> sebagai index
+  console.log("Programmer ke - " + (i + 1) + " bernama " + e);
 });
+
+// map() -> sama seperti forEach tapi lebih baik, karena map() ini bisa mengembalikan array sedangkan forEach() tidak
+
+let useMap = [19, 16, 9, 7, 22, 27, 41];
+let useMapForMap = useMap.map(function (e) {
+  //jika menggunakan forEach() maka hasilnya tidak dapat dikalikan
+  // * map() mengembalikan array
+  return e * 5;
+});
+console.log(useMapForMap.join(" - "));
