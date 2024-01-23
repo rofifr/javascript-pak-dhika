@@ -1,5 +1,6 @@
-let penumpangAngkot = ["Rofi", undefined, "Fathurrohman"];
+let penumpangAngkot = [];
 
+// tambah penumpang
 function tambahPenumpangAngkot(namaPenumpangAngkot, penumpangAngkot) {
   if (penumpangAngkot.length == 0) {
     penumpangAngkot.push(namaPenumpangAngkot);
@@ -20,16 +21,19 @@ function tambahPenumpangAngkot(namaPenumpangAngkot, penumpangAngkot) {
   }
 }
 
+// hapus penumpang
 function hapusPenumpangAngkot(namaPenumpangAngkot, penumpangAngkot) {
   if (penumpangAngkot.length == 0) {
     console.log("Angkot belum berisi penumpang");
-    return penumpangAngkot;
   } else {
     for (let nomorPenumpangKeluar = 0; nomorPenumpangKeluar < penumpangAngkot.length; nomorPenumpangKeluar++) {
       if (penumpangAngkot[nomorPenumpangKeluar] == namaPenumpangAngkot) {
         penumpangAngkot[nomorPenumpangKeluar] = undefined;
         return penumpangAngkot;
+      } else if (nomorPenumpangKeluar == penumpangAngkot.length - 1) {
+        console.log(namaPenumpangAngkot + " tidak ada di dalam angkot");
       }
     }
   }
+  return penumpangAngkot;
 }
