@@ -39,3 +39,5 @@ function hapusPelanggan(namaPelanggan, pelanggan) {
 
   return pelanggan;
 }
+
+// semoga bisa lebih baik lagi🤲
