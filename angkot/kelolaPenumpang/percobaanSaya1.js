@@ -25,6 +25,11 @@ function hapusPenumpangAngkot(namaPenumpangAngkot, penumpangAngkot) {
     console.log("Angkot belum berisi penumpang");
     return penumpangAngkot;
   } else {
-    for (let nomorPenumpangKeluar = 0; nomorPenumpangKeluar < penumpangAngkot.length; nomorPenumpangKeluar++) {}
+    for (let nomorPenumpangKeluar = 0; nomorPenumpangKeluar < penumpangAngkot.length; nomorPenumpangKeluar++) {
+      if (penumpangAngkot[nomorPenumpangKeluar] == namaPenumpangAngkot) {
+        penumpangAngkot[nomorPenumpangKeluar] = undefined;
+        return penumpangAngkot;
+      }
+    }
   }
 }
