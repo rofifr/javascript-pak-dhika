@@ -14,3 +14,5 @@ let myBio = {
     tHobby: "Hang out",
   },
 };
+
+console.log(myBio.myAddress);
