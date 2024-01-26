@@ -16,3 +16,5 @@ let myBio = {
 };
 
 console.log(myBio.myAddress);
+
+// ini adalah contoh penulisan Object literal
