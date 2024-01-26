@@ -1,15 +1,16 @@
 // penulisan Object dengan metode Contruction ini hampir sama dengan penulisan dengan menggunakan Object function declaration
+// tentunya dengan beberapa perbedaan di dalamnya
 
 function Manusia(nama, umur, hobi, alamat, jamTidur) {
   // parameter yang diberikan juga menggunakan properti yang akan digunakan di dalamnya
-  this.nama = nama;
-  this.umur = umur;
+  this.nama = nama; // ini perbedaan ke 1
+  this.umur = umur; // object construction menggunakan keyword this
   this.hobi = hobi;
   this.alamat = alamat;
   this.jamTidur = jamTidur;
 }
 
-let dataManusiaPadaUmumnya = new Manusia(
+let dataManusiaPadaUmumnya = new Manusia( // perbedaan ke 2 adalah, object contruction ini menggunakan keyword new
   "Ujang Bieber",
   22,
   "Bukan mancing",
