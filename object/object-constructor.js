@@ -2,6 +2,7 @@
 // tentunya dengan beberapa perbedaan di dalamnya
 
 function Manusia(nama, umur, hobi, alamat, jamTidur) {
+  // biasanya nama dari function dari object contructor ini diawali dengan huruf kapital
   // parameter yang diberikan juga menggunakan properti yang akan digunakan di dalamnya
   this.nama = nama; // ini perbedaan ke 1
   this.umur = umur; // object constructor menggunakan keyword this
