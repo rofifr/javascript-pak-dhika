@@ -19,6 +19,8 @@ exampleLiteral.menyapa();
 
 // Cara ke-3 -> constructor function
 function Constructor() {
+  console.log(this); // this yang digunakan dalam constuctor function -> mengembalikan Object yang baru dibuat
   console.log("Hallo and Hai -> Constructor");
 }
-new Constructor();
+new Constructor(); // ini adalah Object yang baru dibuat
+// istilah keyword new adalah instan
