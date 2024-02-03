@@ -1,7 +1,10 @@
+// this
+
 // evaluasi cara penulisan, penggunaan, pembuatan Object
 
 // Cara ke-1 -> function declaration
 function exampleDeclaration() {
+  console.log(this); // this yang digunakan dalam function declaration -> mengembalikan Object Global
   console.log("Hallo and Hai -> Declaration");
 }
 exampleDeclaration();
@@ -9,6 +12,7 @@ exampleDeclaration();
 // Cara ke-2 -> Object literal
 let exampleLiteral = {};
 exampleLiteral.menyapa = function () {
+  console.log(this); // this yang digunakan dalam Object literal -> mengembalikan Object yang bersangkutan
   console.log("Hallo and Hai -> Literal");
 };
 exampleLiteral.menyapa();
