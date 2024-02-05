@@ -17,6 +17,14 @@ function MengelolaAngkot(sopir, trayek, penumpang, ongkos) {
       alert("Angkot masih belum ada penumpangnya");
       return false;
     }
+
+    for (let noKursi = 0; noKursi <= this.penumpang.lenght; noKursi++) {
+      if (this.penumpang[noKursi] == namaPenumpang) {
+        this.penumpang[noKursi] = undefined;
+        this.ongkos += bayarOngkos;
+        return this.penumpang;
+      }
+    }
   };
 }
 
