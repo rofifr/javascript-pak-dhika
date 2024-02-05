@@ -13,12 +13,12 @@ function MengelolaAngkot(sopir, trayek, penumpang, ongkos) {
   };
 
   this.penumpangTurun = function (namaPenumpang, bayarOngkos) {
-    if (this.penumpang.lenght === 0) {
+    if (this.penumpang.length === 0) {
       alert("Angkot masih belum ada penumpangnya");
       return false;
     }
 
-    for (let noKursi = 0; noKursi <= this.penumpang.lenght; noKursi++) {
+    for (let noKursi = 0; noKursi < this.penumpang.length; noKursi++) {
       if (this.penumpang[noKursi] == namaPenumpang) {
         this.penumpang[noKursi] = undefined;
         this.ongkos += bayarOngkos;
