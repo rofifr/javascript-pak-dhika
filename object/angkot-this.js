@@ -11,6 +11,13 @@ function MengelolaAngkot(sopir, trayek, penumpang, ongkos) {
     this.penumpang.push(namaPenumpang);
     return this.penumpang;
   };
+
+  this.penumpangTurun = function (namaPenumpang, bayarOngkos) {
+    if (this.penumpang.lenght === 0) {
+      alert("Angkot masih belum ada penumpangnya");
+      return false;
+    }
+  };
 }
 
 let angkotKeSatu = new MengelolaAngkot("Rofi Fathurrohman", ["Cibeureum", "Pancasila"], [], 0);
