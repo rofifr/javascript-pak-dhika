@@ -9,3 +9,4 @@ function MengelolaAngkot(sopir, trayek, penumpang, ongkos) {
 }
 
 let angkotKeSatu = new MengelolaAngkot("Rofi Fathurrohman", ["Cibeureum", "Pancasila"], [], 0);
+let angkotKeDua = new MengelolaAngkot("Riyan Bikes", ["Kawalu", "Term Pancasila"], [], 0);
