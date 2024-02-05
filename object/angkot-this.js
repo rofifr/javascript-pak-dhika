@@ -6,6 +6,11 @@ function MengelolaAngkot(sopir, trayek, penumpang, ongkos) {
   this.trayek = trayek;
   this.penumpang = penumpang;
   this.ongkos = ongkos;
+
+  this.penumpangNaik = function (namaPenumpang) {
+    this.penumpang.push(namaPenumpang);
+    return this.penumpang;
+  };
 }
 
 let angkotKeSatu = new MengelolaAngkot("Rofi Fathurrohman", ["Cibeureum", "Pancasila"], [], 0);
