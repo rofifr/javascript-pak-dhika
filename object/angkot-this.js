@@ -23,9 +23,9 @@ function MengelolaAngkot(sopir, trayek, penumpang, ongkos) {
         this.penumpang[noKursi] = undefined;
         this.ongkos += bayarOngkos;
         return this.penumpang;
-      } else if (noKursi === penumpang.length - 1) {
+      } else if (noKursi === this.penumpang.length - 1) {
         console.log(namaPenumpang + " tidak ada di dalam angkot");
-        return penumpang;
+        return this.penumpang;
       }
     }
   };
