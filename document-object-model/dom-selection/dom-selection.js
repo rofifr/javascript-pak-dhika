@@ -31,3 +31,13 @@ h1.innerHTML = "Belajar DOM - Rofi";
 const p1 = document.getElementsByClassName("p1"); // getElementsByClassName() -> juga mengembalikan HTMLCollections
 // dikarenakan getElementsByClassName() ini juga mengembalikan HTMLCollections dan menjadi sebuah array, maka cara untuk membuat perubahannya juga harus menyertakan indexnya, misal
 p1[0].innerHTML = "Ini adalah paragraf yang diubah menggunakan DOM Javascript"; // jadi penempatan penulisan indexnya bisa seperti ini (p1.[0]) atau diatas ketika pemanggilan atau ketika seleksi (const p1 = document.getElementsByClassName("p1")[0];)
+
+// keempat, document.querySellector()
+const spanForSpan = document.querySelector("p.span1 span:nth-child(2)"); // querySelector() -> mengembalikan element
+spanForSpan.style.backgroundColor = "#2879ff";
+spanForSpan.style.color = "white";
+
+// untuk querySelector() ini, hampir sama seperti selector pada CSS, namun perbedaannya ini akan menyeleksi elemen pertama yang dia temui
+// jika terdapat 4 span yang ada di dalam HTML, maka elemen span yang pertama yang akan diseleksi, contohnya di bawah ini
+const spanForSelect = document.querySelector("p.span1 span");
+spanForSelect.style.color = "orange"; // maka hanya akan mengubah warna element span yang pertama dia temukan
