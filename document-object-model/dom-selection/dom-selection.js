@@ -28,4 +28,6 @@ const h1 = document.getElementsByTagName("h1")[0]; // jadi, karena ini array, ma
 h1.innerHTML = "Belajar DOM - Rofi";
 
 // ketiga, document.getElementsByClassName()
-const p1 = document.getElementsByClassName("p1");
+const p1 = document.getElementsByClassName("p1"); // getElementsByClassName() -> juga mengembalikan HTMLCollections
+// dikarenakan getElementsByClassName() ini juga mengembalikan HTMLCollections dan menjadi sebuah array, maka cara untuk membuat perubahannya juga harus menyertakan indexnya, misal
+p1[0].innerHTML = "Ini adalah paragraf yang diubah menggunakan DOM Javascript"; // jadi penempatan penulisan indexnya bisa seperti ini (p1.[0]) atau diatas ketika pemanggilan atau ketika seleksi (const p1 = document.getElementsByClassName("p1")[0];)
