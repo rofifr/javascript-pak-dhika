@@ -22,3 +22,10 @@ for (let colorNum = 0; colorNum < paragraf.length; colorNum++) {
   paragraf[colorNum].style.backgroundColor = "#bfd6ff";
   // ini akan menjadi cara yang lebih baik
 }
+
+// meskipun element yang diseleksi cuma ada satu, jika menggunakan getElementsByTagName() maka tetap akan menjadi HTMLCollections. artinya ini akan menjadi sebuah array juga. misal,
+const h1 = document.getElementsByTagName("h1")[0]; // jadi, karena ini array, maka indexnya harus tetap disertakan. index ini bisa disimpan di akhir seperti ini, atau dibuat ketika manipulasi akan dilakukan seperti sebelumnya
+h1.innerHTML = "Belajar DOM - Rofi";
+
+// ketiga, document.getElementsByClassName()
+const p1 = document.getElementsByClassName("p1");
