@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar DOM Selection</title>
+    <style>
+      * {
+        border: 1px solid #dedede;
+        padding: 15px;
+        margin: 15px;
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 600px;
+        margin: 30px auto;
+        font-family: sans-serif;
+        color: rgb(41, 41, 41);
+      }
+
+      #section1 a {
+        text-decoration: none;
+        color: rgb(41, 41, 41);
+      }
+    </style>
+    <!-- <script src="dom-selection.js"></script> -->
+    <!-- menyimpan script sebelum tag <body></body> seperti ini akan menjadikan code script tidak akan terbaca (diabaikan), namun ada teknik atau metode khusus yang dapat menjadikan script ini jadi terbaca -->
+  </head>
+  <body>
+    <h1 id="title">Belajar DOM</h1>
+
+    <section id="section1">
+      <p class="p1">Ini paragraf pertama</p>
+      <a href="https://www.instagram.com/rofifr.abi/">follow: my instagram</a>
+      <p class="p2">Ini paragraf kedua</p>
+    </section>
+
+    <section id="section2">
+      <p>Ini paragraf ketiga</p>
+      <ul>
+        <li>Item pertama</li>
+        <li>Item Kedua</li>
+        <li>Item Ketiga</li>
+        <li>Item Keempat</li>
+      </ul>
+    </section>
+
+    <script src="dom-selection.js"></script>
+  </body>
+</html>
