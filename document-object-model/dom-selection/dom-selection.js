@@ -53,3 +53,18 @@ const spanInSection = document.querySelectorAll("#section3 div span"); // queryS
 for (let spanNum = 0; spanNum < spanInSection.length; spanNum++) {
   spanInSection[spanNum].style.backgroundColor = "yellow";
 }
+
+// -
+// -
+// -
+// -
+// -
+
+// Manipulasi Node Root
+// disini akan dapat mengubah atau memanipulasi node root document
+
+// misal ketika saya akan menyeleksi list yang ada di dalam section dengan id="section2" di dalam HTML
+const section2 = document.querySelector("#section2 ul");
+const listKeTiga = section2.getElementsByTagName("li")[2]; // disini mengubah node root menjadi variable yang dibuat sebelumnya
+// dengan menggunakan getElementsByTagName harus menggunakan index
+listKeTiga.style.backgroundColor = "yellow";
