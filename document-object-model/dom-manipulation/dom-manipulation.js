@@ -37,7 +37,7 @@ paragrafSection.style.backgroundColor = "#bfd6ff";
 // element.setAttribute()
 const judulKetiga = document.getElementById("title3");
 judulKetiga.innerHTML = "Ini judul ke tiga";
-judulKetiga.setAttribute("name", "rofi");
+judulKetiga.setAttribute("name", "rofi"); // setAttribute() -> untuk menambah atribut baru pada suatu element, jika atribut yang kita set itu sebelumnya sudah ada di dalam element, maka atribut yang kita set disini akan menimpa atribut yang sebelumnya
 
 const spanToSet = document.querySelector("#section3 .span1 span");
 spanToSet.setAttribute("id", "firstSpan");
@@ -45,3 +45,7 @@ console.log(spanToSet.getAttribute("id")); // getAttribute() -> untuk mengetahui
 
 const secondSpan = document.getElementById("secondSpan");
 secondSpan.removeAttribute("id"); // removeAttribute() -> untuk menghilangkan atribut yang sebelumnya sudah ada di dalam element
+
+// elemet.classList()
+const thirdSpan = document.querySelector(".thirdSpanInDiv");
+thirdSpan.classList.add("third-list"); // classList.add() -> menambahkan class baru ke dalam atribut class pada element tanpa menimpanya
