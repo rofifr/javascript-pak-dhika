@@ -33,3 +33,11 @@ judulKedua.innerHTML = "Text ini ditambahkan menggunakan DOM Javascript";
 const paragrafSection = document.querySelector("#section2 p");
 paragrafSection.style.fontWeight = "bold";
 paragrafSection.style.backgroundColor = "#bfd6ff";
+
+// element.setAttribute()
+const judulKetiga = document.getElementById("title3");
+judulKetiga.innerHTML = "Ini judul ke tiga";
+judulKetiga.setAttribute("name", "rofi");
+
+const spanToSet = document.querySelector("#section3 .span1 span");
+spanToSet.setAttribute("id", "firstSpan");
