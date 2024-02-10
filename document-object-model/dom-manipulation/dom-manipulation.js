@@ -49,3 +49,6 @@ secondSpan.removeAttribute("id"); // removeAttribute() -> untuk menghilangkan at
 // elemet.classList()
 const thirdSpan = document.querySelector(".thirdSpanInDiv");
 thirdSpan.classList.add("third-list"); // classList.add() -> menambahkan class baru ke dalam atribut class pada element tanpa menimpanya
+
+const secondSpanInDiv = document.getElementsByClassName("secondSpanInDiv")[0];
+secondSpanInDiv.classList.remove("second-span"); // classList.remove() -> menghapus class tertentu yang sudah di dalam suatu element, jika tidak ada, maka tidak menjadi masalah
