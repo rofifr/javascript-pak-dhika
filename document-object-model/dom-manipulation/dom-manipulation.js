@@ -55,3 +55,12 @@ secondSpanInDiv.classList.remove("second-span"); // classList.remove() -> mengha
 
 const firstSpanInDiv = document.querySelector(".firstSpanInDiv");
 firstSpanInDiv.classList.toggle("first-span"); // classList.toggle() -> dapat menambahkan class ke dalam element tanpa menimpa class sebelumnya jika belum ada dan menghapus class dari element jika sudah ada sebelumnya
+const allBody = document.body;
+allBody.classList.toggle("body-background");
+
+const fourthSpanInDiv = document.querySelector(".fourthSpanInDiv");
+console.log(fourthSpanInDiv.classList.item(2)); // classList.item() -> menampilkan urutan class di dalam sebuah element sesuai dengan urutannya, dengan contoh ini --> classList.item(2), maka akan menampilkan urutan kelas ke 2 dari element yang hitungannya dimulai dari 0
+
+console.log(fourthSpanInDiv.classList.contains("tiga")); // classList.contains() -> dapat menanyakan apakah di dalam suatu element terdapat nama class tertentu, jika ya maka akan mengembalikan nilai boolean true, jika tidak ada maka false
+
+console.log(fourthSpanInDiv.classList.replace("satu", "empat")); // classList.replace() -> akan menggantikan class yang sebelumnya sudah ada. artinya menimpa nama class yang ditentukan menjadi nama class yang ditentukan juga
