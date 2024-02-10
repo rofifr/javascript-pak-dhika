@@ -41,3 +41,4 @@ judulKetiga.setAttribute("name", "rofi");
 
 const spanToSet = document.querySelector("#section3 .span1 span");
 spanToSet.setAttribute("id", "firstSpan");
+console.log(spanToSet.getAttribute("id")); // getAttribute() -> untuk mengetahui isi di dalam atribut yang ada di dalam element
