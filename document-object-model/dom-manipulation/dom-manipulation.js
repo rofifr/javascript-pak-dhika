@@ -52,3 +52,6 @@ thirdSpan.classList.add("third-list"); // classList.add() -> menambahkan class b
 
 const secondSpanInDiv = document.getElementsByClassName("secondSpanInDiv")[0];
 secondSpanInDiv.classList.remove("second-span"); // classList.remove() -> menghapus class tertentu yang sudah di dalam suatu element, jika tidak ada, maka tidak menjadi masalah
+
+const firstSpanInDiv = document.querySelector(".firstSpanInDiv");
+firstSpanInDiv.classList.toggle("first-span"); // classList.toggle() -> dapat menambahkan class ke dalam element tanpa menimpa class sebelumnya jika belum ada dan menghapus class dari element jika sudah ada sebelumnya
