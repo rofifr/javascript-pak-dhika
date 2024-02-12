@@ -24,3 +24,16 @@ ul.insertBefore(newList, list);
 const thirdSection = document.querySelector("#section3");
 const sectionLink = thirdSection.getElementsByTagName("a")[0];
 thirdSection.removeChild(sectionLink);
+
+// replaceChild() -> mengganti element
+const pSection = thirdSection.querySelector("p");
+
+const newTitle = document.createElement("h4");
+const textNewTitle = document.createTextNode("Judul baru dengan h4");
+newTitle.appendChild(textNewTitle);
+
+thirdSection.replaceChild(newTitle, pSection);
+
+newParagraph.style.backgroundColor = "#dedede";
+newList.style.backgroundColor = "#dedede";
+newTitle.style.backgroundColor = "#dedede";
