@@ -10,3 +10,12 @@ newParagraph.appendChild(newText);
 
 const firstSection = document.getElementById("section1");
 firstSection.appendChild(newParagraph);
+
+const newList = document.createElement("li");
+const newListText = document.createTextNode("List baru di dalam section kedua");
+newList.appendChild(newListText);
+
+const ul = document.querySelector("#section2 ul");
+const list = ul.querySelector("li:nth-child(2)");
+// insertBefore() -> memasukkan element sebelum element
+ul.insertBefore(newList, list);
