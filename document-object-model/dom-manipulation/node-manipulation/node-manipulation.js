@@ -19,3 +19,8 @@ const ul = document.querySelector("#section2 ul");
 const list = ul.querySelector("li:nth-child(2)");
 // insertBefore() -> memasukkan element sebelum element
 ul.insertBefore(newList, list);
+
+// removeChild() -> menghapus element
+const thirdSection = document.querySelector("#section3");
+const sectionLink = thirdSection.getElementsByTagName("a")[0];
+thirdSection.removeChild(sectionLink);
